@@ -3,16 +3,20 @@ Mangafox Download Script
 
 About
 -----
-Mangafox Download Script is a manga downloader similar to my old Onemanga Download Script (although onemanga.com shut down). It works by downloading each individual page and parsing it for the image url. Then it downloads all the images.
-I created this because I prefer reading manga with the use of a viewer like Comix. I also prefer keeping manga on my hard drive in case I am not connected to the internet.
+This is the updated version of https://github.com/techwizrd/MangaFox-Download-Script written by techwizrd. I updated the script so it's working with the new MangaFox site, replaced urllib with requests, beautifulsoup with beautifulsoup4 (New find_all method) and cleaned up the output.
+
+Original "About" text:
+
+    Mangafox Download Script is a manga downloader similar to my old Onemanga Download Script (although onemanga.com shut down). It works by downloading each individual page and parsing it for the image url. Then it downloads all the images.
+    I created this because I prefer reading manga with the use of a viewer like Comix. I also prefer keeping manga on my hard drive in case I am not connected to the internet.
+
 
 Dependencies
 ------------
 
   * Python 2.6 and up (not tested with Python 3)
-  * BeautifulSoup (pip install beautifulsoup)
-
-Tested on Ubuntu Linux 9.04, 9.10, 10.04, 10.10, and 11.04. It should work on any Linux, OS X, or Windows machine as long as they've got the dependencies.
+  * BeautifulSoup4 (pip install beautifulsoup4)
+  * [Python-Requests](http://docs.python-requests.org/)
 
 Usage
 -----
