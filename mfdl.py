@@ -78,7 +78,7 @@ def download_urls(image_urls, manga_name, chapter_number):
         download_path_with_filename = WORKING_DIR + filename
         r = requests.get(url)
         if r.status_code == 200:
-            print "Downloading image #{0} - {1}KB".format(num.zfill(2), len(r.content)/1024)
+            print "Downloading image #{0} - {1}KB".format(str(num).zfill(2), len(r.content)/1024)
             with open(download_path_with_filename, 'wb') as f:
                 for chunk in r.iter_content():
                     f.write(chunk)
